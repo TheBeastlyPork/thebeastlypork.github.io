@@ -1,17 +1,72 @@
 ---
-
+import BaseLayout
+from "../layouts/BaseLayout.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<BaseLayout title="Luke Beaudoin">
+
+<section class="hero container">
+
+<div>
+
+<p>
+
+UNIVERSITY OF MICHIGAN
+
+</p>
+
+<h1>
+
+Developing<br>
+
+Knowledge.
+
+</h1>
+
+<h2>
+
+Pursuing Wisdom.
+
+</h2>
+
+<p>
+
+Math.
+
+Robotics.
+
+Philosophy.
+
+</p>
+
+</div>
+
+</section>
+
+</BaseLayout>
+
+<style>
+
+.hero{
+
+padding-top:120px;
+
+}
+
+h1{
+
+font-size:5rem;
+
+color:var(--blue);
+
+}
+
+h2{
+
+color:var(--orange);
+
+font-size:3rem;
+
+}
+
+</style>

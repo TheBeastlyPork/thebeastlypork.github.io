@@ -1,0 +1,47 @@
+---
+import "../styles/global.css";
+
+const { title } = Astro.props;
+---
+
+<html>
+
+<head>
+
+<title>{title}</title>
+
+</head>
+
+<body>
+
+<nav>
+
+<div class="container">
+
+<a href="/">Luke Beaudoin</a>
+
+<a href="/writing">
+Writing
+</a>
+
+<a href="/research">
+Research
+</a>
+
+<a href="/resume">
+Resume
+</a>
+
+</div>
+
+</nav>
+
+<main>
+
+<slot />
+
+</main>
+
+</body>
+
+</html>
