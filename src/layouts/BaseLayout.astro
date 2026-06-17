@@ -1,38 +1,38 @@
 ---
+import Header
+from "../components/Header.astro";
+
 import "../styles/global.css";
 
-const { title } = Astro.props;
+const {
+title
+} = Astro.props;
+
+/*
+get current url
+*/
+
+const currentPath =
+Astro.url.pathname;
 ---
 
 <html>
 
 <head>
 
-<title>{title}</title>
+<title>
+
+{title}
+
+</title>
 
 </head>
 
 <body>
 
-<div class="page"></div>
+<div class="site-shell">
 
-<header>
-
-<a href="/">Hello!</a>
-
-<nav>
-
-<a href="/about">About</a>
-
-<a href="/writing">Writing</a>
-
-<a href="/research">Research</a>
-
-<a href="/resume">CV</a>
-
-</nav>
-
-</header>
+<Header currentPath={currentPath}/>
 
 <main>
 
@@ -40,6 +40,55 @@ const { title } = Astro.props;
 
 </main>
 
+</div>
+
 </body>
 
 </html>
+
+<style>
+
+
+body {
+
+background: var(--back);
+
+margin: 0;
+
+min-height: 100vh;
+
+}
+
+.site-shell {
+    
+width: min(1000px, 90vw);
+
+margin:
+
+0rem
+auto
+0rem;
+
+background: var(--bg-text);
+
+}
+
+main {
+
+padding:
+
+4rem
+6rem
+6rem;
+
+box-sizing: border-box;
+
+}
+
+header {
+
+margin: 0;
+
+}
+
+</style>

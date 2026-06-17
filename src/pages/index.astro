@@ -3,75 +3,126 @@ import BaseLayout
 from "../layouts/BaseLayout.astro";
 ---
 
-<BaseLayout title="Luke">
+<BaseLayout
+title="Luke"
+>
 
 <section>
 
-<h1>
-
-I study systems,
-build things,
-and write about them.
-
-</h1>
+<div class="text">
 
 <p>
 
-Math · Robotics · Ethics · Learning
-\[
-x+y=c
-\]
+I am an undergraduate student at the University of Michigan majoring in Math and Physics. My curiosities include robotics ethics, soft robotics, philosophy, theology, and complex systems.  
+In the future, I intend to go to graduate school somewhere between Applied Math, Robotics, and Physics. Check back in a few years to find out my research interests.
 
 </p>
-
-</section>
-
-<section>
-
-<h2>
-
-Recent Writing
-
-</h2>
-
+<br>
 <p>
 
-On engineering and wisdom
+I think it is important to study the interactions within our ever-complicated universe, and I believe the current wave of automation
+crashing over society raises distinct questions about how we live "the good life." 
 
 </p>
+<br>
 
 <p>
-
-Research notes from UROP
-
+In particular, I've taken an interest in thinking about the ethical components to robots. This comes in many forms: <br>
+In what ways are we allowed to build robots? <br>
+Could robots have rights? <br>
+How should robotics be used in the economy? <br>
+And, rather pressingly, how should robots be used in war? <br>
+Assuming there are answers to these questions, they certainly aren't easy to find. 
 </p>
 
 <p>
-
-What I am reading
-
+<br>
+On this site, you can find my past research experience, and also my writing as I reflect on things 
+ethical, mathematical, Christian, and personal. Perhaps I'll even develop some positions along the way.
 </p>
+<br>
 
-</section>
+<p> Join me as we explore this wacky, heartfelt, and rapidly robotizing world we live in.</p>
 
-<section>
+</div>
 
-<h2>
+<aside>
 
-Current Work
+<img
+src="/me.jpg"
+/>
 
-</h2>
 
-<p>
+<img
+src="/robot.jpg"
+/>
 
-Reading Strogatz.
-
-Learning controls.
-
-Thinking about technology.
-
-</p>
+</aside>
 
 </section>
 
 </BaseLayout>
+
+<style>
+
+section {
+
+display:
+
+grid;
+
+grid-template-columns:
+
+2fr 240px;
+
+gap:
+
+60px;
+
+}
+
+.text {
+
+font-family: "Bahn";
+
+font-size:
+
+1rem;
+
+}
+
+aside {
+
+display:
+
+flex;
+
+flex-direction:
+
+column;
+
+gap:
+
+30px;
+
+}
+
+.placeholder {
+
+
+
+}
+
+img {
+
+width:
+
+100%;
+
+border:
+
+4px solid black;
+
+}
+
+</style>

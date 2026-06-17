@@ -1,111 +1,109 @@
 @import "katex/dist/katex.min.css";
 
-:root{
-
---white:#FFFFFF;
-
---blue:#00274c;
-
---orange:#D86018;
-
---maize:#ffcb05;
-
---black:#131516;
-
---ash:#989C97;
-
-}
-
-body{
-
-background:var(--bg);
-
-color:var(--text);
+@font-face {
 
 font-family:
-Georgia,
-serif;
 
-margin:0;
+"OCRA";
 
-}
+src:
 
-.page{
+url("public/fonts/OCRAEXT.ttf")
+format("truetype");
 
-max-width:950px;
+font-weight:
 
-margin:auto;
+normal;
 
-padding:40px;
+font-style:
 
-}
-
-header{
-
-display:flex;
-
-justify-content:space-between;
-
-margin-bottom:100px;
+normal;
 
 }
 
-nav{
+@font-face {
 
-display:flex;
+font-family:
 
-gap:32px;
+"Bahn";
 
-}
+src:
 
-h1{
+url("/fonts/bahnschrift.ttf")
+format("truetype");
 
-font-size:4rem;
+font-weight:
 
-line-height:1.1;
+lighter;
 
-color:var(--blue);
+font-style:
 
-font-weight:400;
-
-}
-
-h2{
-
-color:var(--orange);
-
-font-size:1rem;
-
-letter-spacing:.1em;
-
-text-transform:uppercase;
+light;
 
 }
 
-p{
+:root{
 
-line-height:1.8;
+--bg-text:#FFFFFF;
 
-max-width:65ch;
+--bg-header:#00274c;
 
-}
+--page-other:#D86018;
 
-section{
+--page-curr:#ffcb05;
 
-margin-bottom:100px;
+--text:#131516;
 
-}
-
-a{
-
-color:var(--blue);
-
-text-decoration:none;
+--back:#989C97;
 
 }
 
-a:hover{
+* {
+box-sizing: border-box;
+margin: 0;
+}
 
-color:var(--orange);
+html,
+body {
+min-height: 100%;
+}
+
+/* outer area */
+
+body {
+
+background:
+
+var(--ash);
+
+font-family:
+
+Bahnschrift,
+sans-serif;
+
+}
+
+/* WHITE PAGE */
+
+.site-shell {
+
+background:
+
+var(--white);
+
+width:
+
+min(
+1000px,
+calc(100vw - 120px)
+);
+
+min-height:
+
+100vh;
+
+margin:
+
+16px auto;
 
 }

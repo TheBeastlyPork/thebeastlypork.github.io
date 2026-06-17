@@ -1,0 +1,69 @@
+---
+import BaseLayout
+from "../../layouts/BaseLayout.astro";
+
+import { render } from "astro:content";
+
+export async function getStaticPaths() {
+
+const posts =
+await getCollection(
+"writing"
+);
+
+return posts.map(
+post => ({
+
+params: {
+slug:
+post.slug
+},
+
+props: {
+post
+}
+
+})
+);
+
+}
+
+const {
+post
+} =
+Astro.props;
+
+const {
+Content
+} =
+await render(
+post
+);
+
+---
+
+<BaseLayout
+title={
+post.data.title
+}
+>
+
+<article>
+
+<h1>
+
+{post.data.title}
+
+</h1>
+
+<p>
+
+{post.data.description}
+
+</p>
+
+<Content />
+
+</article>
+
+</BaseLayout>

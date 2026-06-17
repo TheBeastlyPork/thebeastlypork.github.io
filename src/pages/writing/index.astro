@@ -1,0 +1,244 @@
+---
+import BaseLayout
+from "../../layouts/BaseLayout.astro";
+
+import {
+getCollection
+}
+from "astro:content";
+
+const posts =
+await getCollection();
+
+console.log(posts);
+const tags = [
+
+"All",
+
+...new Set(
+posts.flatMap(
+p =>
+p.data.tags ?? []
+)
+)
+
+];
+---
+
+<BaseLayout title="Writing">
+
+<section class="writing">
+
+<div class="main">
+
+<p class="intro">
+
+All my writing here is reflective,
+non-academic,
+and written without LLM editing.
+
+</p>
+
+<nav class="tags">
+
+{
+tags.map(tag => (
+
+<a href="#">
+
+{tag}
+
+</a>
+
+))
+}
+
+</nav>
+
+<div class="articles">
+
+{
+posts.map(post => (
+
+<a
+href={`/writing/${post.slug}`}
+class="card"
+>
+
+<h2>
+
+{post.data.title}
+
+</h2>
+
+<p>
+
+{post.data.description}
+
+</p>
+
+</a>
+
+))
+}
+
+</div>
+
+</div>
+
+<aside>
+
+<h3>
+
+Writing Ideas
+
+</h3>
+
+<ul>
+
+<li>Robotics Ethics is High-Stakes</li>
+
+<li>Conscious Chatbots as Better Things to Talk to</li>
+
+<li>Robots: Moral Patients?</li>
+
+<li><i>Imago Dei</i> and Human-made Automata</li>
+
+<li>Thoughtful Christianity</li>
+
+<li>Universalism</li>
+
+<li>War Robots</li>
+
+<li>The Music I Like</li>
+
+<li>MATH 295/296</li>
+
+<li>Emergence</li>
+
+</ul>
+
+</aside>
+
+</section>
+
+</BaseLayout>
+
+<style>
+
+section.writing {
+
+display: grid;
+
+grid-template-columns:
+
+2fr
+240px;
+
+gap:
+
+60px;
+
+}
+
+.intro {
+
+line-height:
+
+1.6;
+
+margin-bottom:
+
+2rem;
+
+}
+
+.tags {
+
+display:
+
+flex;
+
+gap:
+
+1rem;
+
+margin-bottom:
+
+3rem;
+
+flex-wrap:
+
+wrap;
+
+}
+
+.tags a {
+
+text-decoration:
+
+none;
+
+color:
+
+#666;
+
+}
+
+.articles {
+
+display:
+
+flex;
+
+flex-direction:
+
+column;
+
+gap:
+
+2rem;
+
+}
+
+.card {
+
+display:
+
+block;
+
+text-decoration:
+
+none;
+
+color:
+
+inherit;
+
+border-bottom:
+
+1px solid #ddd;
+
+padding-bottom:
+
+2rem;
+
+}
+
+aside {
+
+font-size:
+
+0.9rem;
+
+line-height:
+
+1.6;
+
+color:
+
+#555;
+
+}
+
+</style>
