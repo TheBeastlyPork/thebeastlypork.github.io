@@ -1,6 +1,6 @@
 ---
 title: "Defining a Robot"
-description: "A necessary primer before everything else "
+description: "A necessary primer before everything else"
 
 tags:
   - Robotics
@@ -8,10 +8,10 @@ tags:
 
 date: 2026-06-20
 ---
-I was originally going to have my first writing on this site be about robotics ethics, and giving a brief overview as to issues that most piqued my interest. However, I quickly felt the need to defend "robotics ethics" (or "roboethics") as a distinct field, as oppsoed to classifying it all as "AI ethics" or perhaps "technology ethics" ("tech ethics"). Certainly, all these things have a web of overlaps and differences. Let's talk about the comparison points between these three big ideas at length: What is a robot? How is it different from other technologies? How does a robot relate to AI? Once we have some ideas about this, then we can ask our moral questions with a shared picture in mind.
+I was originally going to have my first writing on this site be about robotics ethics, and giving a brief overview as to issues that most piqued my interest. However, I quickly felt the need to defend "robotics ethics" (or "roboethics") as a distinct field, as oppsoed to classifying it all as "AI ethics" or perhaps "technology ethics" ("tech ethics"). Certainly, all these things have a web of overlaps and differences. Let's talk about the comparison points between these three big ideas at length: What is a robot? How is it different from other technologies? How does a robot relate to AI? We'll talk about all of this roughly through a lens of moral questions. Once we have some ideas down, then we can ask our moral questions about robots with a shared picture in mind.
 
 ## What is a Robot?
-Since we're here to discuss robots, we'll first settle what is essential to a robot before meshing with other ideas. The word "robot" originally comes from Old Slavic "rabu," meaning "slave," and the common conception of a robot certainly involves some sense of doing, acting, and behaving in the real world. Still, robots are obviously diverse: the automated home vacuum-cleaner Roomba is a robot, Boston Dynamics' [Spot](https://bostondynamics.com/products/spot/) is a robot, industrial manufacturing arms are robots. But what about randomly vibrating [HEXBUGS?](https://www.hexbug.com/) A room-sized 3D printer? We usually think of robots as being autonomous and able to do things on their own, yet teleoperated, remote-controlled robots are quite common for medical use (and fit the word's etymology far better) The lines are not exactly clear, but I would like to draw one: I believe that typical mix of "physicalness" and "behaving" does introduce questions to robotics ethics and practice that are distinct from pure, often digitally-constrained AI.
+Since we're here to discuss robots, we'll first settle what is essential to a robot before meshing with other ideas. The word "robot" originally comes from Old Slavic *rabu*, meaning "slave," and the common conception of a robot certainly involves some sense of doing, acting, and behaving in the real world. Still, robots are obviously diverse: the automated home vacuum-cleaner Roomba is a robot, Boston Dynamics' [Spot](https://bostondynamics.com/products/spot/) is a robot, industrial manufacturing arms are robots. But what about randomly vibrating [HEXBUGS?](https://www.hexbug.com/) A room-sized 3D printer? We usually think of robots as being autonomous and able to do things on their own, yet teleoperated, remote-controlled robots are quite common for medical use (and fit the word's etymology far better) The lines are not exactly clear, but I would like to draw one: I believe that typical mix of "physicalness" and "behaving" does introduce questions to robotics ethics and practice that are distinct from pure, often digitally-constrained AI.
 
 Let's define a "robot" as a __constructed device designed to accomplish a task using physical means, with the ability to sense and react to its current state, and usually able to act without direct human action__. As with most definitions, this is certainly not exhaustive nor complete, so here are brief examples and some discussion for relevant categories:
 
@@ -40,13 +40,13 @@ Some overlaps between technology ethics and roboethics is that of liability: <br
   psychological effect on humans: <br>
   *Should we make technology X if we think X is malformative to human behavior?*<br>
  and cruelness of a technology itself: <br>
- *Are nuclear weapons so destructive they should never be built?*<br>
+ *Is this technology so destructive that it should never be built?*<br>
 
  One can easily imagine robot-style questions for these topics.
 
-Questions concerning *robots as technology* are certainly roboethics, and essential around robotics public policy (robopolitics?) but we should recognize such questions are not really unique to robots in themselves. All sorts of technologies have to answer questions about liability, social impact, etc. 
+Questions concerning *robots as technology* are certainly roboethics, and essential around robotics public policy (robopolitics?). It is much more pressing, at time of writing, to consider the societal, psychological, violent effects on robots on humans than considering "distinct" questions about a robot's consciousness, agency, or moral status. But we should recognize such questions are not really unique to robots in themselves. All sorts of technologies have to answer questions about liability, social impact, and so on.
 
-What makes robots a particularly interesting *kind* of technology is that autonomy and human-like-ness. I believe this is where new ethical questions arise, where the robot as an agent itself must be considered. In later articles we'll discuss such questions!
+What makes robots a particularly interesting *kind* of technology is that autonomy and human-like ability to affect the real world. I believe this is where new ethical questions arise, where the robot as an agent itself must be considered. In later articles we'll discuss such questions!
 
 With this in mind, I have three points I want to make clear:
 1. Technology ethics is best defined as questions shared by all technology. Different technologies raise different questions, technology ethics is the overlap/intersection.
@@ -59,4 +59,7 @@ $$ R \subsetneq T $$
 $$ T' \subsetneq R' $$
 
 ## Robots and AI
-It's no secret that artificial intelligence and robotics go hand in hand. 
+It's no secret that artificial intelligence and robotics go hand in hand. I've often heard robotics described as a tool for bringing artificial intelligence into the real world, but I believe the two are slightly more standalone. My thesis is that while AI and robots share great overlap, there are lots of robots that don't really use any (substantive) form of AI. Of course, one must ask what we mean by AI. The [SEP](https://plato.stanford.edu/entries/artificial-intelligence/#WhatExacAI) lays out a "quartet of possibilities," ---
+
+## Concluding Thoughts
+Robots are distinct as a field of study. Even at the "dumbest" end, with minimal artifical intilligence, robots have the ability to automate away every part of human life through mass utilization in the real world - raising hard questions about the propagation and effects of such a powerful technology. The most intelligent robots challenge humans in their ability to take in physical information, think about it, and act accordingly - thus ending up with similar ethical questions about behavior humans do, and raising new ones about the entire scope of the moral community. In the future, we'll tackle these questions about robotics and hopefully find harmonious ways to live with our new best friends.

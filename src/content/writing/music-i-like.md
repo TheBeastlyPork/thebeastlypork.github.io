@@ -6,8 +6,7 @@ description: "Hyper-tailored to me!"
 tags:
 - Other
 
-date:
-2026-06-17
+date: 2026-06-17
 ---
 
 The music we listen to is rather personal. I'd wager that for every one of us, we each have a totally unique intersection of artists and sounds we like and dislike. In this article, I'm going to highlight some albums I'm particularly fond of just for the fun of it. Maybe I'll come back in a few years and find my tastes have totally changed. In no particular order...
@@ -46,12 +45,14 @@ I've never quite found anything else that pricks my inner techno love like this 
 
 Favorite Song: "Experiments on Live Electricity." The song really sets me into a groove of thinking, ideally about whatever work I have in front of me. It's rather bare, to be honest, but clean and driving.
 
+![PPPPPP](../images/PPPPPP.jpg)
 ## 5. *PPPPPP*, Magnus Palsson
 
 Chiptune is a weird genre, defined by intentionally making "retro" and/or "8-bit" sounding music. I'd argue many of its greatest hits come from video games also attempting to match that vibe - *PPPPPP* fits the mold, hailing as the soundtrack from Terry Cavanagh's quirky *VVVVVV*. *VVVVVV* is an intensely minimalist puzzle-platformer about determination and not giving up (you'll feel the temptation to plenty of times on your first run-through) and Palsson neatly captures this energy in every chirp and crisp beat of *PPPPPP*, especially in the aptly titled "Pushing Onwards." With Palsson's talent, you'll find yourself wondering why digital music actually needed to progress past that SNES-era charm. I find the album is paired best with the game for maximum retro-throwback enjoyment.
 
 Favorite Song: "Potential for Anything." This song was the only thing keeping me going during The Laboratory on my initial playthrough of *VVVVVV*.
 
+![DF](../images/DF.jpg)
 ## 6. *Disorganized Fun*, Ronald Jenkees
 
 I encountered Ronald Jenkees through soundtracks to Minecraft building videos. His songs are all heavily electronic, featuring heavy synth, but also plenty of piano (a shining example being "Piano Wire" from *Days Away*) and strings (*Alpha Numeric*). I love the alive, jazzy feel and simple passion in all his work. *Disorganized Fun* is by no means a standout album of his, as I honestly enjoy all of them about equally, but it best captures what I've come to appreciate in Jenkees in this album's gliding, snappy electronic beats.
@@ -60,6 +61,7 @@ Rumor has it that Jenkees' 6th album is just around the corner!
 
 Favorite Song: "Stay Crunchy." Jenkees' most popular song, striking and rich with sound.
 
+![TAB_OUT](../images/TAB_OUT.jpg)
 ## 7. *TAB_OUT*, Mr Rock
 
 By far the most niche and out-of-the way artist on this list, I discovered Mr. Rock through their Wii Song remixes many, many years ago. Somehow I was led to their Amazon Music page, where I found a smattering of pure electronica songs with high-pitched, powerful drops. The name *TAB_OUT* comes from the first letters of its songs, including the "\_," due to surprisingly catchy song "\_\_\_...\_.\_\_.\_," and the album features a wide array of smooth and rhythmic tunes.
