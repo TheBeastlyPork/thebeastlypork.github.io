@@ -1,27 +1,15 @@
 ---
-import BaseLayout
-from "../../layouts/BaseLayout.astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
 
-import {
-getCollection
-}
-from "astro:content";
+const posts = await getCollection("writing");
 
-const posts =
-await getCollection();
+// newest first
+posts.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
 
-console.log(posts);
 const tags = [
-
-"All",
-
-...new Set(
-posts.flatMap(
-p =>
-p.data.tags ?? []
-)
-)
-
+  "All",
+  ...new Set(posts.flatMap(post => post.data.tags ?? []))
 ];
 ---
 
@@ -29,96 +17,62 @@ p.data.tags ?? []
 
 <section class="writing">
 
-<div class="main">
+  <div class="main">
 
-<p class="intro">
+    <p class="intro">
+      All my writing here is reflective, non-academic,
+      and written without LLM editing.
+    </p>
 
-All my writing here is reflective,
-non-academic,
-and written without LLM editing.
+    <nav class="tags">
+      {tags.map(tag => (
+        <a href="#">{tag}</a>
+      ))}
+    </nav>
 
-</p>
+    <div class="articles">
 
-<nav class="tags">
+      {posts.map(post => {
+        const slug = post.id.replace(/\.md$/, "");
 
-{
-tags.map(tag => (
+        return (
+          <a
+            href={`/writing/${slug}`}
+            class="card"
+          >
+            <h2>{post.data.title}</h2>
 
-<a href="#">
+            <p>{post.data.description}</p>
 
-{tag}
+            <small>
+              {post.data.date.toLocaleDateString()}
+            </small>
+          </a>
+        );
+      })}
 
-</a>
+    </div>
 
-))
-}
+  </div>
 
-</nav>
+  <aside>
 
-<div class="articles">
+    <h3>Writing Ideas</h3>
 
-{
-posts.map(post => (
+    <ul>
+      <li>Robotics Ethics is High-Stakes</li>
+      <li>Conscious Chatbots as Better Things to Talk to</li>
+      <li>Robots: Moral Patients?</li>
+      <li><i>Imago Dei</i> and Human-made Automata</li>
+      <li>Thoughtful Christianity</li>
+      <li>Universalism</li>
+      <li>War Robots</li>
+      <li>The Music I Like</li>
+      <li>MATH 295/296</li>
+      <li>Emergence</li>
+    </ul>
 
-<a
-href={`/writing/${post.slug}`}
-class="card"
->
-
-<h2>
-
-{post.data.title}
-
-</h2>
-
-<p>
-
-{post.data.description}
-
-</p>
-
-</a>
-
-))
-}
-
-</div>
-
-</div>
-
-<aside>
-
-<h3>
-
-Writing Ideas
-
-</h3>
-
-<ul>
-
-<li>Robotics Ethics is High-Stakes</li>
-
-<li>Conscious Chatbots as Better Things to Talk to</li>
-
-<li>Robots: Moral Patients?</li>
-
-<li><i>Imago Dei</i> and Human-made Automata</li>
-
-<li>Thoughtful Christianity</li>
-
-<li>Universalism</li>
-
-<li>War Robots</li>
-
-<li>The Music I Like</li>
-
-<li>MATH 295/296</li>
-
-<li>Emergence</li>
-
-</ul>
-
-</aside>
+  </aside>
 
 </section>
 
@@ -126,119 +80,55 @@ Writing Ideas
 
 <style>
 
-section.writing {
-
-display: grid;
-
-grid-template-columns:
-
-2fr
-240px;
-
-gap:
-
-60px;
-
+section.writing{
+    display:grid;
+    grid-template-columns:2fr 240px;
+    gap:60px;
 }
 
-.intro {
-
-line-height:
-
-1.6;
-
-margin-bottom:
-
-2rem;
-
+.intro{
+    line-height:1.6;
+    margin-bottom:2rem;
 }
 
-.tags {
-
-display:
-
-flex;
-
-gap:
-
-1rem;
-
-margin-bottom:
-
-3rem;
-
-flex-wrap:
-
-wrap;
-
+.tags{
+    display:flex;
+    gap:1rem;
+    flex-wrap:wrap;
+    margin-bottom:3rem;
 }
 
-.tags a {
-
-text-decoration:
-
-none;
-
-color:
-
-#666;
-
+.tags a{
+    color:#666;
+    text-decoration:none;
 }
 
-.articles {
-
-display:
-
-flex;
-
-flex-direction:
-
-column;
-
-gap:
-
-2rem;
-
+.articles{
+    display:flex;
+    flex-direction:column;
+    gap:2rem;
 }
 
-.card {
-
-display:
-
-block;
-
-text-decoration:
-
-none;
-
-color:
-
-inherit;
-
-border-bottom:
-
-1px solid #ddd;
-
-padding-bottom:
-
-2rem;
-
+.card{
+    display:block;
+    color:inherit;
+    text-decoration:none;
+    border-bottom:1px solid #ddd;
+    padding-bottom:2rem;
 }
 
-aside {
+.card h2{
+    margin-bottom:.5rem;
+}
 
-font-size:
+.card p{
+    margin-bottom:.75rem;
+}
 
-0.9rem;
-
-line-height:
-
-1.6;
-
-color:
-
-#555;
-
+aside{
+    font-size:.9rem;
+    color:#555;
+    line-height:1.6;
 }
 
 </style>
