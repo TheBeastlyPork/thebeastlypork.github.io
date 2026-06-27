@@ -6,8 +6,7 @@ description: "Hyper-tailored to me!"
 tags:
 - Other
 
-date:
-2026-06-17
+date: 2026-06-17
 ---
 
 The music we listen to is rather personal. I'd wager that for every one of us, we each have a totally unique intersection of artists and sounds we like and dislike. In this article, I'm going to highlight some albums I'm particularly fond of just for the fun of it. Maybe I'll come back in a few years and find my tastes have totally changed. In no particular order...

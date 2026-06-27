@@ -1,35 +1,7 @@
-import {
-defineCollection,
-z
-}
-from "astro:content";
+import { defineCollection } from "astro:content";
 
-const writing =
-defineCollection({
-
-schema:
-z.object({
-
-title:
-z.string(),
-
-description:
-z.string(),
-
-tags:
-z.array(
-z.string()
-),
-
-date:
-z.coerce.date()
-
-})
-
-});
+const writing = defineCollection({});
 
 export const collections = {
-
-writing
-
+  writing,
 };
