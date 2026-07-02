@@ -18,6 +18,6 @@ rehypePlugins:[
 rehypeKatex
 ]
 
-}
+},
 
 });
