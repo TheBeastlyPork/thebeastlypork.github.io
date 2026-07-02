@@ -12,10 +12,13 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/check": "^0.9.9",
     "@astrojs/mdx": "^6.0.3",
     "astro": "^6.4.8",
+    "github-markdown-css": "^5.9.0",
     "katex": "^0.17.0",
     "rehype-katex": "^7.0.1",
-    "remark-math": "^6.0.0"
+    "remark-math": "^6.0.0",
+    "typescript": "^6.0.3"
   }
 }
