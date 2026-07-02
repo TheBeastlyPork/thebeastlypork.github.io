@@ -1,6 +1,10 @@
 ---
 import BaseLayout
 from "../layouts/BaseLayout.astro";
+import { Image } from "astro:assets";
+import me from "../content/images/me.jpg";
+import me2 from "../content/images/me2.jpg";
+import robots from "../content/images/robot_love.jpg";
 ---
 
 <BaseLayout
@@ -38,17 +42,9 @@ ethical, mathematical, Christian, and personal. Perhaps I'll even defend some po
 
 <aside>
 
-<img
-src="../content/images/me.jpg"
-/>
-
-<img
-src="../content/images/me2.jpg"
-/>
-
-<img
-src="../content/images/robot_love.jpg"
-/>
+<Image src={me} alt="" style="max-width: 100%; height: auto;" } />
+<Image src={me2} alt="" style="max-width: 100%; height: auto;" } />
+<Image src={robots} alt="" style="max-width: 100%; height: auto;" } />
 
 </aside>
 
