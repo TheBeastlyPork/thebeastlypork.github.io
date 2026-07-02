@@ -4,6 +4,9 @@ import { getCollection } from "astro:content";
 
 const posts = await getCollection("writing");
 
+console.log(posts.length);
+console.log(posts);
+
 // newest first
 posts.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
 
