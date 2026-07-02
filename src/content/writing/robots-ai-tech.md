@@ -22,7 +22,7 @@ Let's define a "robot" as a __constructed device designed to accomplish a task u
 
 <small><sup>1</sup> This might depend on how "constructed" versus "natural" a bioengineered cell is: it's notable how modern technology blurs this line, especially with cybernetic implants. <br>
 <sup>2</sup> I'd argue this depends on how much the smart home interacts with its environment. A wall readout that sets cooking timers barely interacts with the physical world, compared to a network of cooking devices that automatically calibrate themselves for cooking purposes. There could also be many robots at play in one system like this - a robotic toaster networked with a robot fridge, networked with a robot trash can, etc. <br>
-<sup>3</sup> Perhaps this classification depends on how much sensor integration is used by the missile <br>
+<sup>3</sup> Perhaps this classification depends on how much sensor integration is used by the missile. <br>
 <sup>4</sup> The most complex classification - for our purposes, we won't consider purely "digital AI" as robots, since digital AI itself does not have the ability to do physical actions in the real world. One could easily imagine digital AI giving guidance to a robot body fitted with motors and sensors, but that extra component of real-world interaction is not INHERENT to a digital AI. </small> 
 
 As always, there are plenty of complexities to this definition worth mentioning. First and foremost, it's very tricky to nail down what we mean by physical means. A clever opponent could argue a purely digital AI, like ChatGPT, still interacts with the world in physical ways: it flips real transistors, heats up real wires, lights up a real screen creating real light, perhaps edit files on a real computer and manipulates real data. Still, I think most of us accept there is some intuitive boundary between a digital and physical agent; affecting files in your computer is manipulating a different kind of object than moving an apple on a desk. Perhaps we'll explore the digital/physical boundary some other day.
@@ -55,9 +55,13 @@ To cap all of this off, I have three points I want to make clear:
 
 For the mathematically minded, let $R$ represent the set of all robots, and $T$ represent the set of all possible technologies. Let $R'$ be the set of ethical questions raised by robots, while $T'$ is the set of ethical questions shared by all technologies. Thus,
 
-$$ R \subsetneq T $$
+$$ 
+R \subsetneq T 
+$$
 
-$$ T' \subsetneq R' $$
+$$ 
+T' \subsetneq R' 
+$$
 
 ## Robots and AI
 It's no secret that artificial intelligence and robotics go hand in hand. I've often heard robotics described as a tool for bringing artificial intelligence into the real world, but I believe the two are slightly more standalone. My thesis is that while AI and robots share great overlap, there are lots of robots that don't really use any (substantive) form of AI. Of course, one must ask what we mean by AI. The [SEP](https://plato.stanford.edu/entries/artificial-intelligence/#WhatExacAI) lays out a "quartet of possibilities" that more or less capture potential uses for AI, looking something like this:
