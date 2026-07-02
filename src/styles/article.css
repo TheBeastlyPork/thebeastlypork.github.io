@@ -1,0 +1,218 @@
+/* ===========================================
+   Article Typography
+   =========================================== */
+
+.markdown-body {
+
+    max-width: 800px;
+
+    margin: 0 auto;
+
+    color: var(--text);
+
+    line-height: 1;
+
+    font-size: 1.08rem;
+
+}
+
+/* ===========================================
+   Paragraphs
+   =========================================== */
+
+.markdown-body p {
+
+    margin: 1.25rem 0;
+
+}
+
+/* ===========================================
+   Headings
+   =========================================== */
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4 {
+
+    font-family: "Bahn", monospace;
+
+    font-weight: bold;
+
+    color: --bg-header;
+
+    margin-top: 1rem;
+
+    margin-bottom: 1rem;
+
+}
+
+.markdown-body h1 {
+
+    font-size: 2.7rem;
+
+    margin-top: 0;
+
+}
+
+.markdown-body h2 {
+
+    font-size: 2rem;
+
+    border-bottom: 2px solid var(--page-curr);
+
+    padding-bottom: .4rem;
+
+}
+
+.markdown-body h3 {
+
+    font-size: 1.5rem;
+
+}
+
+/* ===========================================
+   Lists
+   =========================================== */
+
+.markdown-body ul,
+.markdown-body ol {
+
+    padding-left: 2rem;
+
+    margin: 1.5rem 0;
+
+}
+
+.markdown-body li {
+
+    margin: .5rem 0;
+
+}
+
+/* ===========================================
+   Images
+   =========================================== */
+
+.markdown-body img {
+
+    display: block;
+
+    max-width: 100%;
+
+    margin: 2rem auto;
+
+    border: 1px solid rgba(255,255,255,.12);
+
+}
+
+/* ===========================================
+   Tables
+   =========================================== */
+
+.markdown-body table {
+
+    border-collapse: collapse;
+
+    margin: 2rem auto;
+
+}
+
+.markdown-body th {
+
+    background: var(--page-curr);
+
+}
+
+.markdown-body td,
+.markdown-body th {
+
+    border: 1px solid var(--bg-header);
+
+    padding: .6rem 1rem;
+
+}
+
+/* ===========================================
+   Blockquotes
+   =========================================== */
+
+.markdown-body blockquote {
+
+    border-left: 4px solid var(--page-curr);
+
+    padding-left: 1rem;
+
+    margin: 2rem 0;
+
+    color: var(--back);
+
+    font-style: italic;
+
+}
+
+/* ===========================================
+   Code
+   =========================================== */
+
+.markdown-body pre {
+
+    background: #232323;
+
+    padding: 1rem;
+
+    overflow-x: auto;
+
+    border-radius: 6px;
+
+    border: 1px solid rgba(255,255,255,.1);
+
+}
+
+.markdown-body code {
+
+    font-family: Consolas, monospace;
+
+}
+
+/* ===========================================
+   Horizontal Rules
+   =========================================== */
+
+.markdown-body hr {
+
+    border: none;
+
+    border-top: 1px solid var(--page-curr);
+
+    margin: 3rem 0;
+
+}
+
+/* ===========================================
+   Links
+   =========================================== */
+
+.markdown-body a {
+
+    color: var(--page-other);
+
+    text-decoration: none;
+
+}
+
+.markdown-body a:hover {
+
+    text-decoration: underline;
+
+}
+
+/* ===========================================
+   KaTeX
+   =========================================== */
+
+.markdown-body .katex-display {
+
+    margin: 2rem 0;
+
+}

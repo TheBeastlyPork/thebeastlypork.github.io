@@ -8,7 +8,7 @@ font-family:
 
 src:
 
-url("public/fonts/OCRAEXT.ttf")
+url("/fonts/OCRAEXT.ttf")
 format("truetype");
 
 font-weight:
@@ -31,10 +31,6 @@ src:
 
 url("/fonts/bahnschrift.ttf")
 format("truetype");
-
-font-weight:
-
-lighter;
 
 font-style:
 
@@ -74,7 +70,7 @@ body {
 
 background:
 
-var(--ash);
+var(--back);
 
 font-family:
 

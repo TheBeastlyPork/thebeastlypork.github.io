@@ -1,5 +1,5 @@
 ---
-title: "Robotics Ethics"
+title: "Robotics Ethics (WIP)"
 description: "An overview, some points of focus, and my passion."
 
 tags:

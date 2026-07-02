@@ -84,16 +84,14 @@ link => (
 
 href={link.href}
 
-class={currentPath ===
-link.href
-
-?
-
-"current"
-
-:
-
-""
+class={
+    (
+        link.href === "/writing"
+            ? currentPath.startsWith("/writing")
+            : currentPath === link.href
+    )
+        ? "current"
+        : ""
 }
 
 >
@@ -162,7 +160,7 @@ column;
 TITLE
 */
 
-h1 {
+.left h1 {
 
 font-family:
 
@@ -190,7 +188,7 @@ white;
 subtitle
 */
 
-p {
+.left p {
 
 font-family:
 

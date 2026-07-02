@@ -1,10 +1,9 @@
 ---
 title: "Defining a Robot"
-description: "A necessary primer before everything else"
+description: "A necessary primer before everything else."
 
 tags:
   - Robotics
-  - Ethics
 
 date: 2026-06-20
 ---
@@ -19,7 +18,7 @@ Let's define a "robot" as a __constructed device designed to accomplish a task u
 | ----------- | ----------- |-----------
 | Remote Surgery Platform | Heavily Bioengineered Cell <sup>1</sup> | 1995 Honda Accord
 | Quadcopter Drone   | Smart Home System <sup>2</sup>     | Digital Thermometer 
-| [Unitree G1 Humanoid](https://shop.unitree.com/products/unitree-g1?srsltid=AfmBOor9DkxCzrXud2zCGCnc0ysXMPK65hkRxxY2qpEcXLM1ttKbs-Q_) | Missile <sup>3</sup> | ChatGPT <sup>4</sup>
+| [Unitree G1 Humanoid](https://shop.unitree.com/products/unitree-g1?srsltid=AfmBOor9DkxCzrXud2zCGCnc0ysXMPK65hkRxxY2qpEcXLM1ttKbs-Q_) | Missile <sup>3</sup> | ChatGPT <sup>4</sup> 
 
 <small><sup>1</sup> This might depend on how "constructed" versus "natural" a bioengineered cell is: it's notable how modern technology blurs this line, especially with cybernetic implants. <br>
 <sup>2</sup> I'd argue this depends on how much the smart home interacts with its environment. A wall readout that sets cooking timers barely interacts with the physical world, compared to a network of cooking devices that automatically calibrate themselves for cooking purposes. There could also be many robots at play in one system like this - a robotic toaster networked with a robot fridge, networked with a robot trash can, etc. <br>
@@ -57,6 +56,7 @@ To cap all of this off, I have three points I want to make clear:
 For the mathematically minded, let $R$ represent the set of all robots, and $T$ represent the set of all possible technologies. Let $R'$ be the set of ethical questions raised by robots, while $T'$ is the set of ethical questions shared by all technologies. Thus,
 
 $$ R \subsetneq T $$
+
 $$ T' \subsetneq R' $$
 
 ## Robots and AI

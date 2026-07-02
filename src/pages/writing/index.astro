@@ -4,9 +4,6 @@ import { getCollection } from "astro:content";
 
 const posts = await getCollection("writing");
 
-console.log(posts.length);
-console.log(posts);
-
 // newest first
 posts.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
 
@@ -24,12 +21,16 @@ const tags = [
 
     <p class="intro">
       All my writing here is reflective, non-academic,
-      and written without LLM editing.
+      and written without LLM editing. Expect some errors here and there.
     </p>
 
     <nav class="tags">
-      {tags.map(tag => (
-        <a href="#">{tag}</a>
+      {tags.map((tag, i) => (
+        <a
+          href="#"
+          class={`tag-btn${i === 0 ? " active" : ""}`}
+          data-tag={tag}
+        >{tag}</a>
       ))}
     </nav>
 
@@ -37,11 +38,13 @@ const tags = [
 
       {posts.map(post => {
         const slug = post.id.replace(/\.md$/, "");
+        const postTags = post.data.tags ?? [];
 
         return (
           <a
             href={`/writing/${slug}`}
             class="card"
+            data-tags={JSON.stringify(postTags)}
           >
             <h2>{post.data.title}</h2>
 
@@ -60,24 +63,42 @@ const tags = [
 
   <aside>
 
-    <h3>Writing Ideas</h3>
+    <h3>Possible Articles...</h3>
 
     <ul>
-      <li>Robotics Ethics is High-Stakes</li>
-      <li>Conscious Chatbots as Better Things to Talk to</li>
+      <li>Conscious Chatbots Might Have an Upside</li>
       <li>Robots: Moral Patients?</li>
       <li><i>Imago Dei</i> and Human-made Automata</li>
       <li>Thoughtful Christianity</li>
-      <li>Universalism</li>
-      <li>War Robots</li>
-      <li>The Music I Like</li>
-      <li>MATH 295/296</li>
-      <li>Emergence</li>
+      <li>Robots in Warfare</li>
+      <li>What is Emergence?</li>
+      <li>The Really Hard Problem of Consciousness</li>
     </ul>
 
   </aside>
 
 </section>
+
+<script>
+  const tagBtns = document.querySelectorAll<HTMLAnchorElement>(".tag-btn");
+  const cards = document.querySelectorAll<HTMLAnchorElement>(".card");
+
+  tagBtns.forEach(btn => {
+    btn.addEventListener("click", e => {
+      e.preventDefault();
+      tagBtns.forEach(b => b.classList.remove("active"));
+      btn.classList.add("active");
+
+      const selected = btn.dataset.tag ?? "All";
+
+      cards.forEach(card => {
+        const tags: string[] = JSON.parse(card.dataset.tags ?? "[]");
+        const show = selected === "All" || tags.includes(selected);
+        card.style.display = show ? "" : "none";
+      });
+    });
+  });
+</script>
 
 </BaseLayout>
 
@@ -104,6 +125,12 @@ section.writing{
 .tags a{
     color:#666;
     text-decoration:none;
+}
+
+.tags a.active{
+    color:inherit;
+    font-weight:600;
+    text-decoration:underline;
 }
 
 .articles{
