@@ -18,6 +18,9 @@ rehypePlugins:[
 rehypeKatex
 ]
 
-}
+},
+
+  site: "https://lukebeaudoin.github.io",
+  base: "/site",
 
 });
