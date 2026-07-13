@@ -6,6 +6,10 @@ setup for colored connectors
 const {
 currentPath
 } = Astro.props;
+const normalizedPath =
+  currentPath === "/"
+    ? "/"
+    : currentPath.replace(/\/$/, "");
 
 const links = [
 
@@ -83,13 +87,13 @@ link => (
 href={link.href}
 
 class={
-    (
-        link.href === "/writing"
-            ? currentPath.startsWith("/writing")
-            : currentPath === link.href
-    )
-        ? "current"
-        : ""
+  (
+    link.href === "/"
+      ? normalizedPath === "/"
+      : normalizedPath.startsWith(link.href)
+  )
+    ? "current"
+    : ""
 }
 
 >
