@@ -63,14 +63,13 @@ const tags = [
 
   <aside>
 
-    <h3>Possible Articles...</h3>
+    <h3>Possible Future Articles...</h3>
 
     <ul>
-      <li>Conscious Robots Might Have an Upside</li>
+      <li>Math and Me</li>
       <li>Robots: Moral Patients?</li>
       <li><i>Imago Dei</i> and Human-made Automata</li>
       <li>Thoughtful Christianity</li>
-      <li>Robots in Warfare</li>
       <li>What is Emergence?</li>
       <li>The Really Hard Problem of Consciousness</li>
       <li>I'm Starting to Think Structural Realism is Just Kind of True</li>
@@ -124,14 +123,25 @@ section.writing{
 }
 
 .tags a{
-    color:#666;
+    color:var(--back);
     text-decoration:none;
+    transition:
+    0.15s;
 }
 
 .tags a.active{
     color:inherit;
     font-weight:600;
     text-decoration:underline;
+}
+
+.tags a:hover {
+
+    transform:
+
+    translateY(-4px);
+
+
 }
 
 .articles{
@@ -144,7 +154,7 @@ section.writing{
     display:block;
     color:inherit;
     text-decoration:none;
-    border-bottom:1px solid #ddd;
+    border-bottom:1px solid var(--back);
     padding-bottom:2rem;
 }
 

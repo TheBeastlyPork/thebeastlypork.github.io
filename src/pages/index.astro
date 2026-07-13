@@ -5,6 +5,7 @@ import { Image } from "astro:assets";
 import me from "../content/images/me.jpg";
 import me2 from "../content/images/me2.jpg";
 import robots from "../content/images/robot_love.jpg";
+import model from "../content/images/model.jpg";
 ---
 
 <BaseLayout
@@ -18,25 +19,43 @@ title="Luke"
 <p>
 
 I am an undergraduate student at the University of Michigan majoring in Math and Physics. My curiosities include robotics ethics, soft robotics, philosophy, theology, and complex systems.  
-In the future, I intend to go to graduate school somewhere between Applied Math, Robotics, and Physics. Check back in a few years to find out my research interests.
+</p>
+
+<br>
+<p>
+In the future, I intend to go to graduate school somewhere between Applied Math, Robotics, and Physics. Check back in a few years to find out my professional research interests.
 
 </p>
 <br>
 <p>
 
-I think it is important to study the interactions within our ever-complicated universe, and I believe the current wave of automation
-crashing over society raises distinct questions about how we live "the good life." In particular, I've taken an interest in thinking about the ethical components to robots.
-
+I think it's important to study the interactions within our ever-complicated universe, and I believe the current wave of automation
+crashing over society raises distinct questions about how we live "the good life." 
 </p>
+<br>
+<p>
+In particular, I've taken an interest in thinking about how automation might (or might not) introduce new moral agents onto the scene.
+</p>
+
 
 <p>
 <br>
-On this site, you can find my past research experience, and also my writing as I reflect on things 
-ethical, mathematical, Christian, and personal. Perhaps I'll even defend some positions along the way.
+On this site, you can find my research experience and my writing as I reflect on things 
+ethical, mathematical, Christian, and personal. 
+</p>
+<br>
+<p>
+Perhaps I'll even defend some positions along the way.
 </p>
 <br>
 
-<p> Join me as we explore this wacky, heartfelt, and rapidly robotizing world we live in.</p>
+<figure>
+  <Image src={model} alt="" style="max-width: 100%; height: auto;" } />
+  <figcaption>"Γνώμη," in english meaning "Mind" or "Judgement," the page's favicon.
+    May we all think as deeply.
+  </figcaption>
+</figure>
+
 
 </div>
 
@@ -44,7 +63,11 @@ ethical, mathematical, Christian, and personal. Perhaps I'll even defend some po
 
 <Image src={me} alt="" style="max-width: 100%; height: auto;" } />
 <Image src={me2} alt="" style="max-width: 100%; height: auto;" } />
+<figure>
 <Image src={robots} alt="" style="max-width: 100%; height: auto;" } />
+<figcaption>Robots hanging out.
+  </figcaption>
+</figure>
 
 </aside>
 
@@ -80,6 +103,14 @@ font-size:
 
 }
 
+figcaption {
+    padding:.6rem 1rem;
+    color: var(--back);
+    border: 2px solid var(--back);
+    align:center
+    
+}
+
 aside {
 
 display:
@@ -92,7 +123,7 @@ column;
 
 gap:
 
-30px;
+10px;
 
 }
 
@@ -110,7 +141,7 @@ width:
 
 border:
 
-4px solid black;
+4px solid var(--text);
 
 }
 

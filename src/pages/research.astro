@@ -1,27 +1,91 @@
-
-
 ---
-import BaseLayout
-from "../layouts/BaseLayout.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { getCollection, render } from "astro:content";
+
+const projects = await getCollection("research");
+
+// newest first
+projects.sort(
+  (a, b) => b.data.startDate.valueOf() - a.data.startDate.valueOf()
+);
 ---
 
-<BaseLayout
-title="Luke"
->
+<BaseLayout title="Research">
 
-<section>
+<section class="research">
 
-<div class="text">
+    {
+        await Promise.all(projects.map(async project => {
 
-<p>
+            const { Content } = await render(project);
 
-<p>
+            const folder = project.id.replace(/\.md$/, "");
 
-WIP
+            return (
 
-</p>
+                <article class="project">
 
-</div>
+                    <div class="logos">
+
+                    {project.data.logos?.map(image => (
+
+                        <img
+                        src={`/research/${folder}/${image}`}
+                        alt=""
+                        />
+
+                    ))}
+
+                    </div>
+
+                    <h2>{project.data.title}</h2>
+
+                    <div class="meta">
+
+                        <span>{project.data.lab}</span>
+
+                        <span>{project.data.dates}</span>
+
+                    </div>
+
+                    <div class="tags">
+
+                        {project.data.tags.map(tag => (
+
+                            <span>{tag}</span>
+
+                        ))}
+
+                    </div>
+
+                    {
+                        project.data.poster && (
+
+                            <a
+                                class="button"
+                                href={`/research/${folder}/${project.data.poster}`}
+                                target="_blank"
+                            >
+
+                                View Poster
+
+                            </a>
+
+                        )
+                    }
+
+                    <div class="body">
+
+                        <Content />
+
+                    </div>
+
+                </article>
+
+            );
+
+        }))
+    }
 
 </section>
 
@@ -29,32 +93,138 @@ WIP
 
 <style>
 
-section {
+.research{
 
-display:
+display:flex;
 
-grid;
+flex-direction:column;
 
-grid-template-columns:
-
-2fr 240px;
-
-gap:
-
-60px;
+gap:2rem;
 
 }
 
-.text {
+.intro{
 
-font-family: "Bahn";
+max-width:700px;
 
-font-size:
+line-height:1.7;
 
-1rem;
 
 }
 
+.project{
 
+border-bottom:1px solid var(--back);
+
+padding-bottom:2rem;
+
+}
+
+.logos{
+
+display:flex;
+
+gap:1.5rem;
+
+align-items:center;
+
+margin-bottom:1.2rem;
+
+}
+
+.logos img{
+
+height:80px;
+
+width:auto;
+
+object-fit:contain;
+
+height: 80px;
+
+background: var(--text);
+
+
+}
+
+.meta{
+
+display:flex;
+
+justify-content:space-between;
+
+margin:1rem 0;
+
+color:var(--text);
+
+font-size:.95rem;
+
+}
+
+.tags{
+
+display:flex;
+
+flex-wrap:wrap;
+
+gap:.5rem;
+
+margin-bottom:1.5rem;
+
+}
+
+.tags span{
+
+padding:.3rem .8rem;
+
+border:1px solid var(--page-curr);
+
+border-radius:0px;
+
+font-size:.85rem;
+
+}
+
+.button{
+
+display:inline-block;
+
+margin-bottom:0.5rem;
+
+padding:.6rem 1rem;
+
+background:var(--bg-header);
+
+border: 4px solid var(--text);
+
+color: var(--bg-text);
+
+text-decoration:none;
+
+}
+
+.button:hover{
+
+background:var(--page-other);
+
+}
+
+.body{
+
+line-height:1.7;
+
+}
+
+.body :global(h2){
+
+margin-top:0.5rem;
+
+}
+
+.body :global(img){
+
+max-width:100%;
+
+}
 
 </style>

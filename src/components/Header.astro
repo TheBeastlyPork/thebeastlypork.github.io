@@ -38,15 +38,7 @@ name:
 "CV",
 
 href:
-"/CV"
-},
-
-{
-name:
-"Random",
-
-href:
-"/random"
+"/doc/LB_CV.pdf"
 }
 
 ];
@@ -68,6 +60,12 @@ robots,
 math,
 ethics,
 questions
+
+</p>
+
+<p>
+
+contact: <a href="mailto:lubeaudo@umich.edu">lubeaudo@umich.edu</a>
 
 </p>
 
@@ -162,6 +160,8 @@ TITLE
 
 .left h1 {
 
+transition: color 1s ease;
+
 font-family:
 
 "OCRA";
@@ -180,7 +180,7 @@ letter-spacing:
 
 color:
 
-white;
+var(--bg-text);
 
 }
 
@@ -206,6 +206,14 @@ color:
 
 var(--back);
 
+}
+
+.left a{
+    color:var(--page-other);
+}
+
+.left a:active{
+    color:var(--page-curr);
 }
 
 /*
@@ -270,6 +278,12 @@ nav a:hover {
 transform:
 
 translateX(-10px);
+
+}
+
+.left h1:hover {
+
+    color: var(--flair);
 
 }
 
