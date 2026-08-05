@@ -16,7 +16,7 @@ poster: "poster.pdf"
 tags:
   - Medical Robotics
   - Haptics
-  - Kinematics
+  - Forward Kinematics
 
 logos:
   - robotics.png
