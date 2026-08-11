@@ -8,9 +8,11 @@ tags:
 date: 2026-08-3
 ---
 
-Upon completing the SURE program recently (link, picture) I was given a very nice, CoE-coded messenger bag. It's a wonderful bag, with sturdy handles and great construction. I even like the muted grey-brown tone going on. As it was resting on my bed the other day, I starting thinking about how its adjustable strap system worked. 
-(picture)
-The strap works by feeding part of the strap into a "fold-over" section, thus shortening the length by doubling some of it over. I began wondering a simple question that could be answered mathematically:
+Upon recently completing the [SURE program](https://sure.engin.umich.edu/) I was given a very nice, CoE-coded messenger bag. It's a wonderful bag, with sturdy handles and great construction. I particularly like the muted grey-brown tone going on. As it was resting on my bed the other day, I starting thinking about how its adjustable strap system worked. 
+
+![My bag](../images/Bag.jpg)
+
+The strap works by feeding part of the strap into a "fold-over" section, thus shortening the length by doubling some of it over. The singular section is circled in red, with the folded-over in green. I began wondering a simple question that could be answered mathematically:
 
 *From a starting, completely unfurled length $s$, how could I calculate the length of the resulting strap as a function of how much of the strap $x$ is fed into into the "fold-over" section?*
 
