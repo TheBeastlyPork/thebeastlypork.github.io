@@ -10,7 +10,7 @@ date: 2026-08-3
 
 Upon recently completing the [SURE program](https://sure.engin.umich.edu/) I was given a very nice, CoE-coded messenger bag. It's a wonderful bag, with sturdy handles and great construction. I particularly like the muted grey-brown tone going on. As it was resting on my bed the other day, I starting thinking about how its adjustable strap system worked. 
 
-![My bag](../images/Bag.jpg)
+![My bag](../images/bag.jpg)
 
 The strap works by feeding part of the strap into a "fold-over" section, thus shortening the length by doubling some of it over. The singular section is circled in red, with the folded-over in green. I began wondering a simple question that could be answered mathematically:
 
