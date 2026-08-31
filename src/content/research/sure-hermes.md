@@ -38,5 +38,5 @@ For this project, I worked with the Biosciences department within UMTRI under Su
 
 ## Presented At
 
- - 2026 UMTRI Summer Poster Competition - <span style="#CD7F32">3rd Place!</span>
+ - 2026 UMTRI Summer Poster Competition - <span style="#CD7F32">3rd Place</span>
  - 2026 Summer Undergraduate Research in Engineering Showcase
