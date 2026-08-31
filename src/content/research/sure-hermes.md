@@ -35,3 +35,8 @@ For this project, I worked with the Biosciences department within UMTRI under Su
 - Repositioned seated model using LS-DYNA Finite Element Analysis simulation to preserve mesh quality
 - Targeted mesh morphing to correct inverted model elements in MATLAB
 - Inspected elements during morphing iterations using HyperMesh
+
+## Presented At
+
+ - 2026 UMTRI Summer Poster Competition - <span style="#CD7F32">3rd Place!</span>
+ - 2026 Summer Undergraduate Research in Engineering Showcase

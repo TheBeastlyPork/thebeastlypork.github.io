@@ -40,5 +40,8 @@ robotics research and simulation.
 - Validated the model against measurements from a static grid.
 - Tested two different error-reduction techniques.
 
+## Presented At
 
+ - 2026 Undergraduate Research Opportunity Program Spring Symposium
+ - 2026 SIAM Student Mini-Symposium in Applied Mathematics
 

@@ -22,7 +22,7 @@ Perhaps most damning, a few minutes in I was lying on bed annoyedly wondering: w
 
 Of course, all of this was but a small subset of the imposter syndrome war I had been (and still do?) waging against myself as an Honors Math student. This was a war fought by worrying about my success more than contributing to it. Somewhere on the surface I know it's not worth my time to actually be anxious about these things, but deep down it's so difficult to let go. 
 
-I think I have too pure an image of the ideal problem-solver, when really I was already one. The answer, as I came up with the following morning in the airport (sleep does wonders for your reasoning) is pretty simple:
+I think I have too pure an image of the ideal problem-solver, when really I was already being one. The answer, as I came up with the following morning in the airport (sleep does wonders for your reasoning) is pretty simple:
 
 $$
 (s - x) + \frac{1}{2}x = s - \frac{1}{2}x
